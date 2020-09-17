@@ -1,0 +1,4 @@
+django>=3.1.1
+flake8>=3.8.3
+django-anymail[mailjet]
+django-environ==0.4.5

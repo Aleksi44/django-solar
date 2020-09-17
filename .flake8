@@ -1,0 +1,9 @@
+[flake8]
+exclude =
+    .git,
+    settings.py,
+    manage.py,
+    build,
+    dist,
+    *migrations*
+    *__init__*
