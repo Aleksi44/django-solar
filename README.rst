@@ -12,7 +12,7 @@ Django email automation with cron.
 
 Tested with :
 
-- django==3.0.9
+- django==3.1.1
 
 Setup
 #####
