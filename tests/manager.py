@@ -10,5 +10,6 @@ class EventManager(AEventManager):
             mail='test@exemple.com',  #  Receiver
             send_at=datetime.now(),  #  Datetime send
             html=MailTemplate.get(key='test'),  #  HTML of email
-            subject="Test Django Solar"  #  Subject of email
+            subject="Test Django Solar",  #  Subject of email
+            event="something"
         )

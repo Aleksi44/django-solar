@@ -14,6 +14,7 @@ logger = logging.getLogger('django_solar')
 class Notification(models.Model):
     is_send = models.BooleanField(default=False)
     send_at = models.DateTimeField(default=datetime.now)
+    event = models.CharField(default='', max_length=100)
 
     class Meta:
         abstract = True
