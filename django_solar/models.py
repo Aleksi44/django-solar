@@ -62,13 +62,14 @@ class Mail(Notification):
 
     def send(self):
         if self.is_time_to_send:
-            msg = EmailMultiAlternatives(
-                self.subject,
-                self.text,
-                self.from_mail,
-                [self.mail]
-            )
-            if self.html:
-                msg.attach_alternative(self.html, "text/html")
-            msg.send()
+            if context.DS_SEND_MAIL:
+                msg = EmailMultiAlternatives(
+                    self.subject,
+                    self.text,
+                    self.from_mail,
+                    [self.mail]
+                )
+                if self.html:
+                    msg.attach_alternative(self.html, "text/html")
+                msg.send()
             return super().send()
