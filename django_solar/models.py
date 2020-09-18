@@ -67,7 +67,7 @@ class Mail(Notification):
                     self.subject,
                     self.text,
                     self.from_mail,
-                    [self.mail]
+                    [self.mail if not context.DS_SENDER_TEST else context.DS_SENDER_TEST]
                 )
                 if self.html:
                     msg.attach_alternative(self.html, "text/html")

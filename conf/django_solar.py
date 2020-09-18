@@ -11,7 +11,8 @@ environ.Env.read_env(BASE_DIR + '/.env')
 
 DS_CRON_HOUR = 1  # Period of cron in hours
 DS_EVENT_MANAGER = "tests.manager.EventManager"  #  Class manager of events
-DS_SEND_MAIL = False
+DS_SEND_MAIL = True
+DS_SENDER_TEST = 'hello@snoweb.fr'
 
 #  Don't forget to set django email backend
 #  Take a look at https://github.com/anymail/django-anymail

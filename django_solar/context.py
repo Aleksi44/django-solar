@@ -17,3 +17,4 @@ except pkg_resources.DistributionNotFound:
 DS_CRON_HOUR = getattr(settings, "DS_CRON_HOUR", 1)
 DS_EVENT_MANAGER = getattr(settings, "DS_EVENT_MANAGER", None)
 DS_SEND_MAIL = getattr(settings, "DS_SEND_MAIL", True)
+DS_SENDER_TEST = getattr(settings, "DS_SENDER_TEST", None)
