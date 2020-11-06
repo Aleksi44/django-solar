@@ -23,7 +23,7 @@ setup(
     keywords="django email automation",
     license='GPL-3.0',
     install_requires=[
-        'django>=3.0.9',
+        'django>=2.2.17',
     ],
     platforms=['linux'],
     packages=find_packages(),
